@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ColorChord</title>
+<style>body{margin:0;background:#111;color:#eee;font-family:system-ui;text-align:center}h1{margin:.6rem 0 0}canvas{background:#000;border-radius:12px;touch-action:none;max-width:96vw;cursor:crosshair}
+.bar{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem;margin:.6rem}.sw{width:38px;height:38px;border-radius:50%;border:3px solid #333;cursor:pointer}.sw.on{border-color:#fff}
+button,select{font-size:1rem;padding:.5rem .9rem;border-radius:8px;border:0;background:#333;color:#fff;cursor:pointer}</style></head><body>
+<h1>🎨🎵 ColorChord</h1><p>Paint to make music. Colour picks the note, height picks the octave, stroke speed sets the volume.</p>
+<div class="bar" id="pal" role="radiogroup" aria-label="Colour / note"></div>
+<div class="bar"><select id="scale" aria-label="Scale"><option value="maj">Major (bright)</option><option value="pent">Pentatonic (dreamy)</option><option value="min">Minor (moody)</option></select>
+<button id="play">▶ Replay painting</button><button id="clr">Clear</button><button id="save">💾 Save image</button></div>
+<canvas id="c" width="900" height="500" aria-label="Painting canvas"></canvas><p id="info"></p>
+<script src="app.js"></script></body></html>
